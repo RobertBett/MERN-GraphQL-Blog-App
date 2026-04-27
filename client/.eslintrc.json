@@ -1,0 +1,62 @@
+{
+    "root": true,
+      "env": {
+          "browser": true,
+          "es6": true,
+          "node": true,
+          "jest": true
+      },
+      "globals": {
+          "window": true,
+          "define": true,
+          "require": true,
+          "module": true
+      },
+      "extends": ["airbnb"],
+      "parser": "babel-eslint",
+      "parserOptions": {
+          "ecmaFeatures": {
+              "experimentalObjectRestSpread": true,
+              "jsx": true,
+              "es6": true,
+              "emitWarning": true
+          },
+          "sourceType": "module",
+          "ecmaVersion": 6
+      },
+      "plugins": [
+          "babel",
+          "react"
+      ],
+      "rules": {
+            "import/prefer-default-export": "off",
+            "react/destructuring-assignment":"off",
+            "react/jsx-props-no-spreading":"off",
+            "react/prefer-stateless-function":"off",
+            "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+            "indent": ["error", 2],
+            "linebreak-style": [ "error", "unix" ],
+            "quotes": [ "error", "single" ],
+            "semi": [ "error", "always"],
+            "react/jsx-boolean-value": 0,
+            "react/jsx-closing-bracket-location": 1,
+            "react/jsx-indent-props": [1, 2],
+            "react/jsx-no-undef": [ "error"],
+            "react/jsx-uses-react": 1,
+            "react/jsx-uses-vars": 1,
+            "react/react-in-jsx-scope": 1,
+            "react/prefer-es6-class": 1,
+            "react/jsx-no-bind": 1,
+          "import/no-extraneous-dependencies": 0,
+          "import/no-named-as-default": 0,
+          "react/require-default-props" : 0,
+          "react/forbid-prop-types": "off",
+          "no-underscore-dangle": 0,
+          "react/prop-types":0,
+          "jsx-a11y/label-has-for": [ 1, {
+            "required": {
+              "some": [ "nesting", "id" ]
+            }
+          }] 
+      }
+    }
